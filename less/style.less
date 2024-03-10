@@ -1,0 +1,65 @@
+@primary-bg-color: #fb0058;
+@primary-tx-color: #fff;
+@secondary-bg-color: #fff;
+@secondary-tx-color: #333;
+
+@primary-shadow: #000;
+
+@display_breaks : {
+    md: 720px;
+    lg: 1080px;
+    xlg: 1080px;
+}
+
+
+@import "header.less";
+@import "grid.less";
+@import "form.less";
+@import "/style.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: @secondary-bg-color;
+    color: @secondary-tx-color;
+}
+
+.hero {
+    img {
+        width:50%;
+        object-fit: cover;
+    }
+}
+
+.fullimg {
+    width:100%;
+    object-fit: cover;
+}
+
+.animacion {
+    animation: ejemplo 2s infinite;
+  }
+  
+  @keyframes ejemplo {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
