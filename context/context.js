@@ -8,7 +8,7 @@ const pageContext = {
 }
 
 const globalContext = {
-    "title": "Menganito"
+    "title": "Portafolio"
 }
 
 const getContext = (contextKey) => {
