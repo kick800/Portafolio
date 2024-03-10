@@ -35,8 +35,6 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-      - name: Build Site
-        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
